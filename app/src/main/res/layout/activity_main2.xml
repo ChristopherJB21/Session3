@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/eT_Username"
+        android:hint="Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_below="@id/eT_Username"
+        android:id="@+id/eT_Password"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:layout_below="@id/eT_Password"
+        android:id="@+id/cB_CheckRememberMe"
+        android:text="Remember Me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<!--    <Button-->
+<!--        android:layout_below="@id/cB_CheckRememberMe"-->
+<!--        android:id="@+id/btn_Login"-->
+<!--        android:text="Login"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content" />-->
+
+<!--    <Button-->
+<!--        android:layout_below="@id/cB_CheckRememberMe"-->
+<!--        android:layout_toEndOf="@id/btn_Login"-->
+<!--        android:id="@+id/btn_Forgot"-->
+<!--        android:text="Forgot Password"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content" />-->
+
+    <LinearLayout
+        android:layout_below="@id/cB_CheckRememberMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="25px"
+            android:text="Login"
+            android:textSize="16sp"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25px"
+            android:text="Forgot Password"
+            android:textSize="16sp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>
